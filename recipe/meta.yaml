@@ -20,7 +20,7 @@ requirements:
     # just to avoid build/host merge issues
     # but these should be in host.
     - python
-    - pybind11
+    - pybind11=2.2
     - boost-cpp
     - pip
   run:
