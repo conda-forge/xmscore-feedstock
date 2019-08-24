@@ -1,4 +1,4 @@
-{% set version = "3.0.7" %}
+{% set version = "3.1.0" %}
 
 package:
   name: xmscore
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/Aquaveo/xmscore/archive/{{ version }}.tar.gz
-  sha256: 98acd332ac5a14602539e218db82b2970dbeed2b149e0d47dcbd80c6778801c7
+  sha256: a58610c9cf4319fdc34c4d62222a12a90c4c17279f4fa69fae38db044d6eb798
 
 build:
   number: 0
-  skip: True  # [not py36]
+  skip: True  # [py27]
   merge_build_host: true
 
 requirements:
