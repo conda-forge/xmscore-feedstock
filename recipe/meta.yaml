@@ -7,6 +7,8 @@ package:
 source:
   url: https://github.com/Aquaveo/xmscore/archive/{{ version }}.tar.gz
   sha256: a58610c9cf4319fdc34c4d62222a12a90c4c17279f4fa69fae38db044d6eb798
+  patches:
+    - 0001-Fix-pybind11-cmake-path.patch
 
 build:
   number: 0
@@ -20,7 +22,8 @@ requirements:
     # just to avoid build/host merge issues
     # but these should be in host.
     - python
-    - pybind11
+    # need newer pybind11 builds for cmake path patch
+    - pybind11 >2.3.0
     - boost-cpp
     - pip
   run:
