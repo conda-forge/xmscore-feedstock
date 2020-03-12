@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: xmscore
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/Aquaveo/xmscore/archive/{{ version }}.tar.gz
-  sha256: a58610c9cf4319fdc34c4d62222a12a90c4c17279f4fa69fae38db044d6eb798
+  sha256: 79e2e19907d26364a24443dcb8afdadfd458c062c068dfdcce63022938c40fcb
   patches:
     - 0001-Fix-pybind11-cmake-path.patch
 
 build:
-  number: 1
-  skip: True  # [py27]
+  number: 0
+  skip: true  # [py27]
   merge_build_host: true
 
 requirements:
@@ -43,7 +43,7 @@ about:
   home: aquaveo.com
   license: BSD-2-Clause
   license_file: LICENSE
-  summary: "Support library for XMS libraries and products"
+  summary: Support library for XMS libraries and products
   doc_url: https://aquaveo.github.io/xmscore
   dev_url: https://github.com/Aquaveo/xmscore
 
