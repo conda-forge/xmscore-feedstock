@@ -1,4 +1,4 @@
-{% set version = "3.1.1" %}
+{% set version = "3.2.0" %}
 
 package:
   name: xmscore
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/Aquaveo/xmscore/archive/{{ version }}.tar.gz
-  sha256: 79e2e19907d26364a24443dcb8afdadfd458c062c068dfdcce63022938c40fcb
+  sha256: 6932a072b44ae1a7f096841ea4e043662d2a5f2db9c30c23c4527d22323c859d
   patches:
     - 0001-Fix-pybind11-cmake-path.patch
 
